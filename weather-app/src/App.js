@@ -1,4 +1,5 @@
 import React from 'react'
+import Weather from './Weather'
 import './App.css'
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
       <header className="App-header">
         Sää
       </header>
-      Tähän tulee sää
+      <Weather/>
     </div>
   )
 }
