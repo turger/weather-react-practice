@@ -20,6 +20,7 @@
 .Weather_forecast {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .Weather_box {
