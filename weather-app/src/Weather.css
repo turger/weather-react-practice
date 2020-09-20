@@ -1,0 +1,54 @@
+.Weather {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.Weather_selected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 38px;
+  padding: 20px;
+}
+
+.Weather_current img {
+  height: 80px;
+  padding-top: 4px;
+}
+
+.Weather_forecast {
+  display: flex;
+  flex-direction: row;
+}
+
+.Weather_box {
+  background: #ffffff;
+  border: 1px solid #2d3947;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Weather_box img {
+  height: 40px;
+  padding-top: 2px;
+}
+
+.Weather_day {
+  color: #2d3947;
+  text-transform: uppercase;
+}
+
+.Weather_time {
+  color: #482e48;
+  font-weight: bold;
+}
+
+.Weather_temp {
+  color: #2e482e;
+}
