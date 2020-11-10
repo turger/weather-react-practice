@@ -33,6 +33,7 @@
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .Weather_box img {
@@ -52,4 +53,12 @@
 
 .Weather_temp {
   color: #2e482e;
+}
+
+.Weather_desc {
+  text-transform: capitalize;
+}
+
+.Weather_city {
+  font-size: 5vw;
 }
