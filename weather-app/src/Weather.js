@@ -10,8 +10,19 @@ class Weather extends Component {
     }
   }
 
-  componentDidMount() {
-    getForecast().then(forecasts => {
+  async componentDidMount() {
+    // Haetaan data ensimmäisellä mountilla
+    await this.getForecast()
+    // Asetetaan intervalli tunnin välein hakemaan päivitetty data
+    // 1 tunti on 60*60*1000 = 3600000 millisekuntia
+    setInterval(async () => {
+      await this.getForecast()
+    } , 60*60*1000)
+
+  }
+
+  async getForecast() {
+    await getForecast().then(forecasts => {
       this.setState({ forecasts })
     })
   }
